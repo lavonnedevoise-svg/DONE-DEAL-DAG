@@ -1,58 +1,115 @@
 export default function ServicesPage() {
   return (
-    <main style={{ padding: 56, fontFamily: "system-ui", maxWidth: 980, margin: "0 auto" }}>
-      <h1 style={{ fontSize: 44, marginTop: 0 }}>Services</h1>
-      <p style={{ opacity: 0.85, lineHeight: 1.7 }}>
-        Pick what you need. If you’re not sure, book a call and we’ll map the cleanest path.
-      </p>
-
-      <div style={{ marginTop: 26, display: "grid", gap: 16 }}>
-        <div style={{ border: "1px solid #e6e6e6", borderRadius: 16, padding: 18 }}>
-          <h2 style={{ marginTop: 0 }}>E-Book Services (Done-for-You)</h2>
-          <ul style={{ lineHeight: 1.9, paddingLeft: 18 }}>
-            <li>Outline + structure</li>
-            <li>Writing / ghostwriting support</li>
-            <li>Formatting (KDP-ready)</li>
-            <li>Cover direction + upload support</li>
-          </ul>
+    <main>
+      {/* Hero */}
+      <div className="card" style={{ padding: 26 }}>
+        <div style={{ color: "var(--gold)", fontWeight: 900, letterSpacing: 0.4 }}>
+          SERVICES
         </div>
 
-        <div style={{ border: "1px solid #e6e6e6", borderRadius: 16, padding: 18 }}>
-          <h2 style={{ marginTop: 0 }}>Publishing + KDP Setup</h2>
-          <ul style={{ lineHeight: 1.9, paddingLeft: 18 }}>
-            <li>Print + Kindle interior files</li>
-            <li>Metadata + keywords</li>
-            <li>Trim, margins, bleed checks</li>
-            <li>Upload + launch checklist</li>
-          </ul>
-        </div>
+        <h1 className="h1" style={{ fontSize: 46, marginTop: 10 }}>
+          Choose your lane.
+        </h1>
 
-        <div style={{ border: "1px solid #e6e6e6", borderRadius: 16, padding: 18 }}>
-          <h2 style={{ marginTop: 0 }}>Brand Systems + Funnels</h2>
-          <ul style={{ lineHeight: 1.9, paddingLeft: 18 }}>
-            <li>Landing page + offer clarity</li>
-            <li>Email capture + follow-up</li>
-            <li>Automation strategy</li>
-            <li>Conversion-focused structure</li>
-          </ul>
+        <p className="p">
+          Premium publishing, brand systems, and automation—built fast, built clean, built to convert.
+        </p>
+
+        <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
+          <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">
+            Book a Call
+          </a>
+          <a className="btn btnGhost" href="/contact">
+            Ask a Question
+          </a>
         </div>
       </div>
 
-      <div style={{ marginTop: 26 }}>
-        <a
-          href="https://calendly.com/lavonnedevoise/30min"
-          style={{
-            display: "inline-block",
-            padding: "12px 16px",
-            borderRadius: 12,
-            background: "#111",
-            color: "#fff",
-            textDecoration: "none",
-            fontWeight: 700,
-          }}
-        >
-          Book a Call
-        </a>
+      {/* Offer Cards */}
+      <div style={{ marginTop: 18, display: "grid", gap: 14 }}>
+        {/* Starter */}
+        <div className="card">
+          <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
+            <h2 className="h2">Starter</h2>
+            <div style={{ color: "var(--gold2)", fontWeight: 900 }}>Quick Win</div>
+          </div>
+
+          <p className="p" style={{ marginTop: 6 }}>
+            For the person who needs a clean, professional foundation—fast.
+          </p>
+
+          <ul style={{ lineHeight: 1.95, paddingLeft: 18, margin: "14px 0 0", color: "var(--muted)" }}>
+            <li>Offer clarity + positioning (what you sell, who it’s for)</li>
+            <li>1-page landing page structure (copy + section blueprint)</li>
+            <li>Call-to-action setup (Calendly / contact)</li>
+            <li>Launch checklist (simple, executable)</li>
+          </ul>
+
+          <div style={{ marginTop: 16, display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">Book Starter Call</a>
+            <a className="btn btnGhost" href="/contact">Questions</a>
+          </div>
+        </div>
+
+        {/* Authority */}
+        <div className="card" style={{ border: "1px solid rgba(212,175,55,.35)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
+            <h2 className="h2">Authority</h2>
+            <div style={{ color: "var(--gold)", fontWeight: 900 }}>Most Popular</div>
+          </div>
+
+          <p className="p" style={{ marginTop: 6 }}>
+            For creators & entrepreneurs who need a premium look + a real system behind it.
+          </p>
+
+          <ul style={{ lineHeight: 1.95, paddingLeft: 18, margin: "14px 0 0", color: "var(--muted)" }}>
+            <li>Homepage + Services page (conversion-first)</li>
+            <li>Basic funnel flow (lead capture + next step)</li>
+            <li>Email follow-up outline (what to send + when)</li>
+            <li>Publishing support or offer packaging (your choice)</li>
+          </ul>
+
+          <div style={{ marginTop: 16, display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">Book Authority Call</a>
+            <a className="btn btnGhost" href="/contact">Questions</a>
+          </div>
+        </div>
+
+        {/* Ascension */}
+        <div className="card">
+          <div style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
+            <h2 className="h2">Ascension</h2>
+            <div style={{ color: "var(--gold2)", fontWeight: 900 }}>Flagship</div>
+          </div>
+
+          <p className="p" style={{ marginTop: 6 }}>
+            For high-intent brands that want the full build: premium presentation + automation + execution support.
+          </p>
+
+          <ul style={{ lineHeight: 1.95, paddingLeft: 18, margin: "14px 0 0", color: "var(--muted)" }}>
+            <li>Full site foundation (Home / Services / About / Contact)</li>
+            <li>Offer suite mapping (what to sell now vs later)</li>
+            <li>Automation plan (lead → follow-up → booking)</li>
+            <li>Publishing system or funnel buildout (based on your priority)</li>
+          </ul>
+
+          <div style={{ marginTop: 16, display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">Book Ascension Call</a>
+            <a className="btn btnGhost" href="/contact">Questions</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom CTA */}
+      <div className="card" style={{ marginTop: 18, padding: 22, textAlign: "center" }}>
+        <h2 className="h2" style={{ marginBottom: 6 }}>Not sure which fits?</h2>
+        <p className="p" style={{ margin: "0 auto", maxWidth: 760 }}>
+          Book a call. We’ll pick the fastest lane, cut the fluff, and build what actually moves revenue.
+        </p>
+
+        <div style={{ marginTop: 16 }}>
+          <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">Book the 30-min Call</a>
+        </div>
       </div>
     </main>
   );
