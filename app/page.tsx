@@ -16,22 +16,40 @@ export default function Home() {
     who want to look established, convert cleanly, and scale without chaos.
   </p>
 
-  {/* VALUE STRIP */}
-  <div
-    style={{
-      display: "flex",
-      gap: 14,
-      marginTop: 18,
-      flexWrap: "wrap",
-      color: "var(--muted)",
-      fontWeight: 700,
-      fontSize: 14,
-    }}
-  >
-    <span>• Strategy-first</span>
-    <span>• Premium execution</span>
-    <span>• Systems that scale</span>
+{/* WHAT WE BUILD */}
+<div style={{ marginTop: 28 }}>
+
+  <h2 className="h2">What We Build</h2>
+
+  <div style={{ display: "grid", gap: 14, marginTop: 12 }}>
+
+    <div className="card">
+      <h3 style={{ margin: 0 }}>Done-For-You Publishing</h3>
+      <p className="p">
+        We turn ideas into premium books, intellectual property, and authority assets
+        designed to sell, scale, and position you as the expert.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3 style={{ margin: 0 }}>Brand Systems</h3>
+      <p className="p">
+        Messaging, positioning, and pages that make you look established
+        before you ever speak.
+      </p>
+    </div>
+
+    <div className="card">
+      <h3 style={{ margin: 0 }}>Funnels & Automation</h3>
+      <p className="p">
+        Lead capture and follow-up systems that remove friction,
+        protect opportunities, and compound growth.
+      </p>
+    </div>
+
   </div>
+</div>
+
 
   {/* CTA */}
   <div style={{ display: "flex", gap: 12, marginTop: 22, flexWrap: "wrap" }}>
