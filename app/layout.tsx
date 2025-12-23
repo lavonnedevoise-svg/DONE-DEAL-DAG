@@ -13,7 +13,36 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <div className="navWrap">
           <div className="container navInner">
-            <Link href="/" className="brand">DeVoise Ascension Group</Link>
+       <header style={{ borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+  <div
+    className="navInner"
+    style={{
+      maxWidth: 1200,
+      margin: "0 auto",
+      padding: "16px 20px",
+    }}
+  >
+    <a href="/" style={{ display: "flex", alignItems: "center", gap: 10 }}>
+      <img
+        src="/logo.png"
+        alt="DeVoise Ascension Group"
+        style={{ height: 42 }}
+      />
+    </a>
+
+    <nav className="links">
+      <a href="/services">Services</a>
+      <a href="/about">About</a>
+      <a
+        href="https://calendly.com/lavonnedevoise/30min"
+        className="btn btnPrimary"
+      >
+        Book a Call
+      </a>
+    </nav>
+  </div>
+</header>
+
 
             <div className="links">
               <Link href="/" className="link">Home</Link>
