@@ -1,17 +1,49 @@
 export default function Home() {
   return (
     <main>
-      <div className="card" style={{ padding: 26 }}>
-        <h1 className="h1">DeVoise Ascension Group</h1>
-        <p className="p">
-          We take you higher. Luxury-grade strategy, publishing, and digital systems built for elevation.
-        </p>
+    {/* HERO */}
+<div className="card" style={{ padding: 30 }}>
+  <div style={{ color: "var(--gold)", fontWeight: 900, letterSpacing: 0.6 }}>
+    DEVOISE ASCENSION GROUP
+  </div>
 
-        <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
-          <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">Book a Call</a>
-          <a className="btn btnGhost" href="/services">View Services</a>
-        </div>
-      </div>
+  <h1 className="h1" style={{ marginTop: 10 }}>
+    Build once. <br /> Ascend continuously.
+  </h1>
+
+  <p className="p" style={{ maxWidth: 760 }}>
+    Premium publishing, brand systems, and automation for creators and entrepreneurs
+    who want to look established, convert cleanly, and scale without chaos.
+  </p>
+
+  {/* VALUE STRIP */}
+  <div
+    style={{
+      display: "flex",
+      gap: 14,
+      marginTop: 18,
+      flexWrap: "wrap",
+      color: "var(--muted)",
+      fontWeight: 700,
+      fontSize: 14,
+    }}
+  >
+    <span>• Strategy-first</span>
+    <span>• Premium execution</span>
+    <span>• Systems that scale</span>
+  </div>
+
+  {/* CTA */}
+  <div style={{ display: "flex", gap: 12, marginTop: 22, flexWrap: "wrap" }}>
+    <a className="btn btnPrimary" href="https://calendly.com/lavonnedevoise/30min">
+      Book the 30-min Call
+    </a>
+    <a className="btn btnGhost" href="/services">
+      View Services & Pricing
+    </a>
+  </div>
+</div>
+
 
       <div style={{ marginTop: 18, display: "grid", gap: 14 }}>
         <div className="card">
