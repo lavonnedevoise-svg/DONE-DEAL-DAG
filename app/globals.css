@@ -8,8 +8,13 @@
   --crimson: #8b0000;
 
   --border: rgba(255,255,255,.14);
-  --card: rgba(255,255,255,.06);
 }
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+p{ color: var(--muted); }
+h1,h2,h3{ color: var(--text); }
 
 body{ background: radial-gradient(900px 420px at 50% 0%, rgba(123,15,20,.35), transparent 60%), var(--bg); color:var(--text); }
 
