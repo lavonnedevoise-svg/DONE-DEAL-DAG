@@ -17,38 +17,42 @@ export default function Home() {
   </p>
 
 {/* WHAT WE BUILD */}
-<div style={{ marginTop: 28 }}>
-
+<section style={{ marginTop: 28 }}>
   <h2 className="h2">What We Build</h2>
 
-  <div style={{ display: "grid", gap: 14, marginTop: 12 }}>
-
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+      gap: 14,
+      marginTop: 12,
+    }}
+  >
     <div className="card">
       <h3 style={{ margin: 0 }}>Done-For-You Publishing</h3>
       <p className="p">
-        We turn ideas into premium books, intellectual property, and authority assets
-        designed to sell, scale, and position you as the expert.
+        We turn ideas into premium books, intellectual property, and authority assets designed
+        to sell, scale, and position you as the expert.
       </p>
     </div>
 
     <div className="card">
       <h3 style={{ margin: 0 }}>Brand Systems</h3>
       <p className="p">
-        Messaging, positioning, and pages that make you look established
-        before you ever speak.
+        Messaging, positioning, and pages that make you look established before you ever speak.
       </p>
     </div>
 
     <div className="card">
-      <h3 style={{ margin: 0 }}>Funnels & Automation</h3>
+      <h3 style={{ margin: 0 }}>Funnels &amp; Automation</h3>
       <p className="p">
-        Lead capture and follow-up systems that remove friction,
-        protect opportunities, and compound growth.
+        Lead capture and follow-up systems that remove friction, protect opportunities, and
+        compound growth.
       </p>
     </div>
-
   </div>
-</div>
+</section>
+
 
 
   {/* CTA */}
