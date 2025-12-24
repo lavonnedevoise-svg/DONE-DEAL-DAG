@@ -384,3 +384,14 @@ h1, .h1{ line-height: 1.05; }
 .card{
   opacity: 1 !important;
 }
+/* ===== FIX: main content text invisible (inherits white) ===== */
+main, main * {
+  color: #111 !important;
+  -webkit-text-fill-color: #111 !important;
+  opacity: 1 !important;
+}
+
+/* keep muted paragraphs readable */
+main .p, main p {
+  color: rgba(17,17,17,0.78) !important;
+}
