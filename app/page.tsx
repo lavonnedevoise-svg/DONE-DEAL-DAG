@@ -3,14 +3,11 @@ export default function Home() {
     <main>
     {/* HERO */}
 <div className="card" style={{ padding: 30 }}> <img
-  src="/logo.png"
+  src="/dag-logo.png"
   alt="DeVoise Ascension Group"
-  style={{
-    height: 64,
-    marginBottom: 12,
-    opacity: 0.95
-  }}
+  style={{ height: 64, width: "auto", display: "block", margin: "0 auto 14px" }}
 />
+
 
   <div style={{ color: "var(--gold)", fontWeight: 900, letterSpacing: 0.6 }}>
     DEVOISE ASCENSION GROUP
