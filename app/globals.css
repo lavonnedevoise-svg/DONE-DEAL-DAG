@@ -485,3 +485,21 @@ html, body{
 /* LINKS */
 a, .link{ color: var(--text); }
 a:hover, .link:hover{ color: var(--gold); }
+/* FORCE TEXT COLORS FOR DARK THEME */
+.h1, .h2, .h3,
+h1, h2, h3 {
+  color: var(--text) !important;
+}
+
+.p, p, li {
+  color: var(--muted) !important;
+}
+
+small, .muted {
+  color: var(--muted) !important;
+}
+
+/* Gold kicker/label text */
+.kicker, .eyebrow {
+  color: var(--gold) !important;
+}
