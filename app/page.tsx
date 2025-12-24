@@ -2,7 +2,16 @@ export default function Home() {
   return (
     <main>
     {/* HERO */}
-<div className="card" style={{ padding: 30 }}>
+<div className="card" style={{ padding: 30 }}> <img
+  src="/logo.png"
+  alt="DeVoise Ascension Group"
+  style={{
+    height: 64,
+    marginBottom: 12,
+    opacity: 0.95
+  }}
+/>
+
   <div style={{ color: "var(--gold)", fontWeight: 900, letterSpacing: 0.6 }}>
     DEVOISE ASCENSION GROUP
   </div>
