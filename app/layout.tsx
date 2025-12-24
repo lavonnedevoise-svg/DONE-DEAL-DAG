@@ -19,11 +19,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               className="brand"
               style={{ display: "flex", alignItems: "center", gap: 16 }}
             >
-            <img
-  src="/logo.png"
+ <img
+  src="/brand/logo.png"
   alt="DeVoise Ascension Group"
-  style={{ height: 52, width: "auto", display: "block" }}
+  style={{ height: 52, width: "auto" }}
 />
+
 
              
             </Link>
