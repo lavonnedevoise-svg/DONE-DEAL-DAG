@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Link
               href="/"
               className="brand"
-              style={{ display: "flex", alignItems: "center", gap: 10 }}
+              style={{ display: "flex", alignItems: "center", gap: 16 }}
             >
             <img
   src="/logo.png"
