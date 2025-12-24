@@ -420,3 +420,16 @@ body {
 .card p {
   color: rgba(17,17,17,0.78) !important;
 }
+.btnPrimary {
+  background: #C9A227; /* DAG Gold */
+  color: #111;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btnPrimary:hover {
+  background: #b8941f;
+  color: #111;
+}
