@@ -363,3 +363,24 @@ h1, .h1{ line-height: 1.05; }
 @media (max-width: 900px){
   .card{ box-shadow: 0 10px 22px rgba(0,0,0,0.12); }
 }
+/* ===== FIX: text invisible until highlighted ===== */
+.card{
+  color:#111 !important;
+}
+
+.card h1,
+.card h2,
+.card h3{
+  color:#111 !important;
+}
+
+.card .p,
+.p{
+  color: rgba(17,17,17,0.78) !important;
+  opacity: 1 !important;
+}
+
+/* if any parent opacity is killing children, force it back */
+.card{
+  opacity: 1 !important;
+}
