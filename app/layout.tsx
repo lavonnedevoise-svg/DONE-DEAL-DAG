@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 alt="DeVoise Ascension Group"
                 style={{ height: 34, width: "auto" }}
               />
-              <span>DeVoise Ascension Group</span>
+             
             </Link>
 
             <nav className="links">
