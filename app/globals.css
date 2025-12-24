@@ -259,3 +259,83 @@ main{
   width: 100%;
   background: linear-gradient(90deg, transparent, rgba(107,15,22,.9), transparent);
 }
+/* ===== DeVoise Ascension styling ===== */
+
+.container{ max-width:1200px; margin:0 auto; padding:0 20px; }
+
+.navWrap{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(5,5,5,.72);
+  border-bottom: 1px solid rgba(212,175,55,.18);
+}
+
+.navInner{
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.brand{
+  font-weight:900;
+  letter-spacing:.6px;
+  text-decoration:none;
+  color: var(--gold);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.link{
+  color: rgba(255,255,255,.82);
+  text-decoration:none;
+  font-weight:700;
+}
+.link:hover{ color: var(--gold2); }
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px 16px;
+  border-radius:14px;
+  font-weight:800;
+  text-decoration:none;
+  border:1px solid transparent;
+}
+
+.btnPrimary{
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  color:#111;
+  border-color: rgba(212,175,55,.55);
+  box-shadow: 0 10px 28px rgba(212,175,55,.16);
+}
+
+.btnGhost{
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  border-color: rgba(212,175,55,.22);
+}
+
+.card{
+  background: radial-gradient(700px 220px at 50% 0%, rgba(212,175,55,.10), transparent 55%), rgba(255,255,255,.03);
+  border:1px solid rgba(212,175,55,.18);
+  border-radius:18px;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+
+.h1{ font-size:52px; line-height:1.02; margin: 0; letter-spacing:-.6px; }
+.h2{ font-size:22px; margin:0; }
+.p{ font-size:16px; line-height:1.6; opacity:.88; }
