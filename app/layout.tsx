@@ -22,7 +22,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <img
                 src="/logo.png"
                 alt="DeVoise Ascension Group"
-                style={{ height: 34, width: "auto" }}
+               style={{ height: 52, width: "auto" }}
+style={{ height: 52, width: "auto", display: "block" }}
+
+
               />
              
             </Link>
