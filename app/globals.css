@@ -231,12 +231,22 @@ main{
   border: 1px solid var(--border);
 }
 
-.btnPrimary{
-  background: linear-gradient(180deg, var(--gold2), var(--gold));
-  color: #121212;
-  border-color: rgba(212,175,55,.55);
-  box-shadow: 0 10px 26px rgba(212,175,55,.20);
+.btnPrimary {
+  background: linear-gradient(
+    135deg,
+    #8b0000,   /* crimson */
+    #d4af37    /* gold */
+  );
+  color: #111; /* readable on gold */
+  font-weight: 900;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 10px 26px rgba(212, 175, 55, 0.25);
 }
+
+.btnPrimary:hover {
+  filter: brightness(1.08);
+}
+
 .btnPrimary:hover{ filter: brightness(1.03); }
 
 .btnGhost{
