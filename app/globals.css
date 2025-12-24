@@ -339,3 +339,27 @@ main{
 .h1{ font-size:52px; line-height:1.02; margin: 0; letter-spacing:-.6px; }
 .h2{ font-size:22px; margin:0; }
 .p{ font-size:16px; line-height:1.6; opacity:.88; }
+/* --- POLISH PASS (layout + cards) --- */
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.card{
+  margin-top: 14px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.card + .card{ margin-top: 14px; }
+
+h1, .h1{ line-height: 1.05; }
+.h2{ margin-bottom: 8px; }
+
+@media (max-width: 900px){
+  .card{ box-shadow: 0 10px 22px rgba(0,0,0,0.12); }
+}
