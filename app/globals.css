@@ -395,3 +395,28 @@ main, main * {
 main .p, main p {
   color: rgba(17,17,17,0.78) !important;
 }
+/* ===== FIX: text invisible inside light cards (inherits white) ===== */
+
+/* Keep site default (nav can stay dark-themed) */
+body {
+  color: #f5f5f5;
+}
+
+/* Cards are LIGHT, so they must force DARK text */
+.card {
+  background: rgba(255,255,255,0.92);
+  color: #111 !important;
+}
+
+/* Make sure everything inside the card follows the card color */
+.card * {
+  color: inherit !important;
+  -webkit-text-fill-color: inherit !important;
+  opacity: 1 !important;
+}
+
+/* Paragraph tone inside cards */
+.card .p,
+.card p {
+  color: rgba(17,17,17,0.78) !important;
+}
