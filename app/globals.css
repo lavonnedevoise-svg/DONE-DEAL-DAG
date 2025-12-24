@@ -1,4 +1,17 @@
 :root{
+  --bg: #0b0b0f;
+  --card: rgba(255,255,255,.06);
+  --text: #f5f5f7;
+  --muted: rgba(245,245,247,.72);
+
+  --gold: #d4af37;
+  --gold2: #f0d27a;
+  --red: #6b0f16;
+
+  --border: rgba(255,255,255,.10);
+}
+body{ background: var(--bg); color: var(--text); }
+:root{
   --gold: #c9a227;
   --gold2:#a97c00;
   --bg:#ffffff;
